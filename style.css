@@ -1,9 +1,22 @@
 * {
     box-sizing: border-box;
+    font-family: "IBM Plex Sans Condensed", sans-serif;
 }
 
-:root {
-    
+h1 {
+    font-size: 28;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.75rem;
+
+}
+
+h2 {
+    font-size: 24;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.75rem;
+
 }
 
 body {
