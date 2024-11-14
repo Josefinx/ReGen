@@ -107,10 +107,32 @@ body {
     gap: 9.713px;
     border-radius: 5.18px;
     background: var(--Button-Primary, #42600C);
+    border: none;
     color: #FFF;
     font-size: 1rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.311px;
+}
+
+/* material-functions-section */
+
+#material-functions-section {
+    background: url(/Assets/Desktop-Mobile-material-functions-background.jpg);
+    
+}
+
+#material-functions-card {
+    background-color: #FFF;
+    margin: 15px;
+    margin-top: 15px;
+}
+
+.material-functions-card-box-img {
+background-color: lightgrey;
+}
+
+.material-functions-detail-img {
+    background-color: lightgray;
 }
