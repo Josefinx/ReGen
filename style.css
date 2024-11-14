@@ -4,14 +4,14 @@
 }
 
 h1 {
-    font-size: 28;
+    font-size: 1.75;
     font-weight: 500;
     font-style: normal;
     line-height: 1.75rem;
 }
 
 h2 {
-    font-size: 24;
+    font-size: 1.5rem;
     font-weight: 500;
     font-style: normal;
     line-height: 1.75rem;
@@ -21,24 +21,75 @@ body {
     margin: 0;
 }
 
-#view-section {
+/* 360-view-section */
 
+#view-section {
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+}
+
+.view-section-header{
+    display: flex;
+    align-items: center;
+    height: 3.4rem;
+    gap: 19px;
+    align-self: stretch;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 1rem;
 }
 
 #regen-watch-header {
     color: #000;
     font-family: "IBM Plex Sans Condensed";
-    font-size: 42px;
+    font-size: 2.625rem;
     font-style: normal;
     font-weight: 600;
+}
+
+.view-section-header-pro {
+    display: flex;
+    height: 35px;
+    width: 58.45px;
+    justify-content: center;
+    align-items: center;
+    gap: 11.21px;
+    border-radius: 5.979px;
+    background: var(--Button-Primary, #42600C);
+}
+
+.view-section-header-pro-p {
+    color: #FFF;
+    font-family: "IBM Plex Sans Condensed";
+    font-size: 17.936px;
+    font-style: normal;
+    font-weight: medium;
     line-height: normal;
+    letter-spacing: 0.359px;
+}
+
+.view-section-h2 {
+    line-height: 0;
+}
+
+.watch-img {
+    background-color: lightgray;
+    width: 100vw;
+    aspect-ratio: 1;
+    margin-left: -25px;
 }
 
 #color-material-picker-container {
     display: flex;
+    width: 343px;
+    padding: 5px;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-self: center;
 }
 
-.color-picker, .material-picker {
+.material-picker-container, .color-picker-container {
     display: flex;
 }
 
@@ -47,4 +98,19 @@ body {
     width: 1rem;
     background-color: lightgray;
     border-radius: 0.5rem;
+}
+
+#design-your-own {
+    display: flex;
+    padding: 5.18px 11.008px;
+    align-items: center;
+    gap: 9.713px;
+    border-radius: 5.18px;
+    background: var(--Button-Primary, #42600C);
+    color: #FFF;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.311px;
 }
