@@ -20,3 +20,31 @@ h2 {
 body {
     margin: 0;
 }
+
+#view-section {
+
+}
+
+#regen-watch-header {
+    color: #000;
+    font-family: "IBM Plex Sans Condensed";
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+#color-material-picker-container {
+    display: flex;
+}
+
+.color-picker, .material-picker {
+    display: flex;
+}
+
+.color-picker-circle, .material-picker-circle {
+    height: 1rem;
+    width: 1rem;
+    background-color: lightgray;
+    border-radius: 0.5rem;
+}
