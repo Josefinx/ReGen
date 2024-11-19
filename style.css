@@ -136,3 +136,77 @@ background-color: lightgrey;
 .material-functions-detail-img {
     background-color: lightgray;
 }
+
+/* Footer */
+
+footer {
+    background-color: #D9D9D9;
+    padding-top: 50px;
+    display: flex;
+}
+
+.footer-info {
+    margin-left: 25px;
+}
+
+.footer-h2 {
+    margin-top: 0;
+    font-size: 28px;
+}
+
+.footer-p {
+    width: 50%;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-more {
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.footer-ul {
+    font-size: 20px;
+    margin-bottom: 50px;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.footer-ul ::marker {
+    font-size: 13px;
+}
+
+.footer-p-2 {
+    width: 300px;
+    word-wrap: break-word;
+    font-weight: 400;
+}
+
+.footer-phone-number {
+    text-decoration: none;
+    font-size: 28px;
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.footer-links {
+    text-decoration: none;
+    color: #000;
+}
+
+.footer-logo {
+    width: 177px;
+    height: 94px;
+    margin: 50px 0 0 0;
+    flex-direction: row-reverse;
+
+/*     position: absolute;
+    bottom: 0rem;
+    right: 1.1rem; */
+}
+
+
+
+
+
