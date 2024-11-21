@@ -128,6 +128,7 @@ text-align: center;
 }
 
 .new-products-section-img:last-of-type {
+    margin-top: 0;
     margin-bottom: 0;
 }
 
