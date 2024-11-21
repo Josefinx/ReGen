@@ -127,30 +127,23 @@ text-align: center;
     margin-bottom: 1.75rem;
 }
 
-.new-products-section-img:last-of-type {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
 /* material-functions-section */
 
 #material-functions-section {
     background: url(/Assets/Desktop-Mobile-material-functions-background.jpg);
-    
+    position: absolute;
 }
 
 #material-functions-card {
     background-color: #FFF;
     margin: 15px;
     margin-top: 15px;
+    margin-bottom: 15px;
 }
 
-.material-functions-card-box-img {
-background-color: lightgrey;
-}
-
-.material-functions-detail-img {
-    background-color: lightgray;
+.material-functions-card-square {
+    display: flex;
+    margin-bottom: 1.25rem;
 }
 
 /* Footer */
