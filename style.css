@@ -21,7 +21,7 @@ body {
     margin: 0;
 }
 
-/* 360-view-section */
+/* view-section */
 
 #view-section {
     display: flex;
@@ -114,6 +114,21 @@ body {
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.311px;
+}
+
+/* new-products-section */
+
+#new-products-section h1 {
+text-align: center;
+}
+
+.new-products-section-img {
+    margin-top: 1.75rem;
+    margin-bottom: 1.75rem;
+}
+
+.new-products-section-img:last-of-type {
+    margin-bottom: 0;
 }
 
 /* material-functions-section */
