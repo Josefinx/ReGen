@@ -25,8 +25,92 @@ p, ul, ol {
     font-size: 1rem;
     font-weight: 400;
     font-style: normal;
-  }  
+}  
 
+
+/* nav */
+
+header {
+    background-color: #FFF;
+    display: flex;
+    justify-self: auto auto;
+    justify-content: space-between;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 20;
+}
+
+nav {
+    display: flex;
+    justify-self: auto auto;
+    gap: 0.8rem;
+}
+
+nav, p {
+    margin: 0;
+}
+
+.nav-logo {
+   max-width: 88px;
+}
+
+.nav-logo-box {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    display: inline;
+    padding-left: 0.5rem;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.nav-menu-img {
+    max-width: 30px;
+}
+
+.nav-trolly {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-trolly-img {
+    max-width: 30px;
+}
+
+.nav-search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-search-img {
+    max-width: 30px;
+}
+
+.nav-swedish {
+    margin: 0 0.8rem 0 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-swedish-img {
+    max-width: 30px;
+    padding-top: 0.4rem;
+    padding-bottom: 0.3rem;
+}
 
 /* view-section */
 
