@@ -75,7 +75,7 @@ body {
 
 .watch-img {
     background-color: lightgray;
-    width: 100vw;
+    width: 1fr;
     aspect-ratio: 1;
     margin-left: -25px;
 }
