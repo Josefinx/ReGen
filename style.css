@@ -3,6 +3,10 @@
     font-family: "IBM Plex Sans Condensed", sans-serif;
 }
 
+body {
+    margin: 0;
+}
+
 h1 {
     font-size: 1.75rem;
     font-weight: 500;
@@ -17,9 +21,12 @@ h2 {
     line-height: 1.75rem;
 }
 
-body {
-    margin: 0;
-}
+p, ul, ol {
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: normal;
+  }  
+
 
 /* view-section */
 
@@ -150,53 +157,52 @@ text-align: center;
 
 footer {
     background-color: #D9D9D9;
-    padding-top: 50px;
-    display: flex;
+    padding-top: 3.14rem;
 }
 
-.footer-info {
-    margin-left: 25px;
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap:1.4rem;
+    padding-left: 1.563rem;
+    padding-right: 1.563rem;
+    position: relative;
+    margin: 0;
 }
 
-.footer-h2 {
-    margin-top: 0;
-    font-size: 28px;
-}
-
-.footer-p {
-    width: 50%;
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.footer-more {
-    margin-top: 0;
-    margin-bottom: 40px;
+.footer-h1 {
+    max-width: 16rem;
+    margin: 0 0 1.2rem 0;
 }
 
 .footer-ul {
-    font-size: 20px;
-    margin-bottom: 50px;
     list-style-type: disc;
-    padding-left: 20px;
+    max-width: 16rem;
+    margin: 0;
+    padding: 0 0 0 1rem;
 }
 
 .footer-ul ::marker {
-    font-size: 13px;
+    font-size: 0.7rem;
+    margin: 0;
+}
+
+.footer-p {
+    word-wrap: break-word;
+    max-width: 12rem;
+    margin: 0;
 }
 
 .footer-p-2 {
-    width: 300px;
     word-wrap: break-word;
-    font-weight: 400;
+    max-width: 16rem;
+    margin: 0 0 0.63rem 0;
 }
 
 .footer-phone-number {
     text-decoration: none;
-    font-size: 28px;
     color: #000;
-    font-weight: 500;
-    margin-bottom: 50px;
+    margin: 0 0 0 0;
 }
 
 .footer-links {
@@ -204,15 +210,17 @@ footer {
     color: #000;
 }
 
+.footer-copy {
+    margin: 1rem 0 0 0;
+    font-weight: 200;
+    max-width: 16rem;
+}
+
 .footer-logo {
-    width: 177px;
     height: 94px;
     margin: 50px 0 0 0;
-    flex-direction: row-reverse;
-
-/*     position: absolute;
-    bottom: 0rem;
-    right: 1.1rem; */
+    position: relative;
+    justify-self: end;
 }
 
 
