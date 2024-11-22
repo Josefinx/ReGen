@@ -25,25 +25,51 @@ button {
     gap: 0.87819rem;
 }
 
-h1 {
-    font-size: 1.75rem;
-    font-weight: 500;
-    font-style: normal;
-    line-height: 1.75rem;
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 1.75rem;
+        font-weight: 500;
+        font-style: normal;
+        line-height: 1.75rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        font-style: normal;
+        line-height: 1.75rem;
+    }
+    
+    p, ul, ol {
+        font-size: 1rem;
+        font-weight: 400;
+        font-style: normal;
+    }  
 }
 
-h2 {
-    font-size: 1.5rem;
-    font-weight: 500;
-    font-style: normal;
-    line-height: 1.75rem;
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 3.5rem;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    h2 {
+        font-size: 2.375rem;
+        font-weight: 400;
+        font-style: normal;
+        line-height: auto;
+    }
+
+    p {
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 150%;
+        font-style: normal;
+    }
+
 }
 
-p, ul, ol {
-    font-size: 1rem;
-    font-weight: 400;
-    font-style: normal;
-}  
 
 
 /* nav */
@@ -231,11 +257,46 @@ nav, p {
     line-height: normal;
     border-radius: 0.46838rem;
     background: var(--Button-Primary, #42600C);
-    display: inline-flex;
     padding: 0.46838rem 0.99525rem;
     justify-content: center;
     align-items: center;
     gap: 0.87819rem;
+}
+
+@media screen and (min-width: 768px) {
+    #view-section {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        gap: 10px;
+        margin-left: 25px;
+        margin-right: 25px;
+
+    }
+
+    .view-section-header, .view-section-h2, .view-section-paragraph, #color-material-picker-container {
+        grid-column: 1 / 4;
+
+    }
+    .view-section-header {
+        order: 1;
+    }
+    .view-section-h2{
+        order: 3;
+    }
+    .view-section-paragraph {
+        order: 4;
+    }
+
+    .watch-img {
+        grid-column: 4 / 9 ;
+        width: 100%;
+        order: 2;
+        grid-row: 1/4;
+    }
+
+    #color-material-picker-container {
+        order: 5;
+    }
 }
 
 /* new-products and material-functions wrapper*/
