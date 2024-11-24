@@ -47,7 +47,7 @@ button {
     }  
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
     h1 {
         font-size: 3.5rem;
         font-weight: 500;
@@ -277,7 +277,7 @@ nav, p {
     margin: 0 2.56rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
     #view-section {
         display: grid;
         grid-template-columns: repeat(8, 1fr);
@@ -316,34 +316,40 @@ nav, p {
     #color-material-picker-container {
         order: 5;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         justify-content: space-between;
     }
 
     .color-picker{
         grid-column: 1/2;
         order: 1;
-        justify-content: flex-start;
+        justify-self: center;
+        width: fit-content;
     }
 
     .material-picker {
-        grid-column: 2/3;
+        grid-column: 3/4;
         order: 2;
+        justify-self: center;
+        width: fit-content;
     }
 
     #design-your-own {
-        grid-column: 1 / span 2;
+        grid-column: 2 / span 1;
         order: 3;
         margin: 2.75rem 0 0 0;
+        max-width: 30rem;
 
     }
 
     .color-picker-minimun, .material-picker-minimun {
         text-align: start;
+        width: fit-content;
     }
 
     .color-picker-container, .material-picker-container {
         justify-content: flex-start;
+        width: fit-content;
     }
 
     .material-picker-circle, .color-picker-circle {
@@ -394,9 +400,14 @@ text-align: center;
 .new-products-section-img {
     margin-top: 1.75rem;
     margin-bottom: 1.75rem;
+    height: 24.6rem;
+    aspect-ratio: 1;
+    object-fit: scale-down;
+    object-position: center;
+    background: white;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
     #new-products-section {
     background: none;
     border: none;
@@ -411,6 +422,9 @@ text-align: center;
     .new-products-wrapper {
     display: flex;
     flex-direction: row;
+    overflow-x: scroll;
+    justify-content: start;
+    
 }
 
     .new-products-section-img {
@@ -443,7 +457,7 @@ text-align: center;
     margin-bottom: 1.25rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
     #material-functions-section{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -526,12 +540,20 @@ text-align: center;
         height: auto;
     }
 
-    @media screen and (min-width: 768px) {
+    .desktop-only {
+        display: none;
+    }
+
+    @media screen and (min-width: 769px) {
         .fix-it-card-container {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(5, 1fr);
             gap: 0.25rem;
             margin: 0;
+        }
+
+        .desktop-only {
+            display: block;
         }
     }
 
@@ -540,7 +562,7 @@ text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 1.59rem;
+    margin: 5rem 1.5rem;
 }
 
 .newsletter-section-p{
@@ -583,7 +605,30 @@ text-align: center;
     margin: 0;
 }
 
+.newsletter-img {
+    display: none;
+}
 
+@media screen and (min-width: 769px) {
+#newsletter-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.newsletter-section-wrapper {
+    grid-column: 1/2;
+    margin: 1.37rem;
+}
+
+.newsletter-img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    grid-column: 2 / 3;
+}
+
+}
 
 /* Footer */
 
