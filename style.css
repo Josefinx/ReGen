@@ -222,7 +222,7 @@ nav, p {
     display: flex;
     padding: 5px;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-end;
     align-self: center;
 }
@@ -232,6 +232,19 @@ nav, p {
     margin: 0;
     justify-content: space-between;
 }
+
+.material-picker-circle-p, .color-picker-circle-p{
+    display: none;
+}
+
+/* .color-picker-container-square, .material-picker-container-square {
+   /*  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.1rem; 
+}
+ */
 
 .material-picker-minimun, .color-picker-minimun {
     margin: 0;
@@ -261,12 +274,14 @@ nav, p {
     justify-content: center;
     align-items: center;
     gap: 0.87819rem;
+    margin: 0 2.56rem;
 }
 
 @media screen and (min-width: 768px) {
     #view-section {
         display: grid;
         grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: fit-content fit-content stretch fit-content;
         gap: 10px;
         margin-left: 25px;
         margin-right: 25px;
@@ -274,28 +289,75 @@ nav, p {
     }
 
     .view-section-header, .view-section-h2, .view-section-paragraph, #color-material-picker-container {
-        grid-column: 1 / 4;
+        grid-column: 1 / 5;
 
     }
     .view-section-header {
         order: 1;
+        justify-content: stretch;
     }
     .view-section-h2{
         order: 3;
+        display: flex;
+        flex-wrap: wrap;
+        line-height: normal;
     }
     .view-section-paragraph {
         order: 4;
     }
 
     .watch-img {
-        grid-column: 4 / 9 ;
+        grid-column: 5 / 9 ;
         width: 100%;
         order: 2;
-        grid-row: 1/4;
+        grid-row: 1 / 5;
     }
 
     #color-material-picker-container {
         order: 5;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+    }
+
+    .color-picker{
+        grid-column: 1/2;
+        order: 1;
+        justify-content: flex-start;
+    }
+
+    .material-picker {
+        grid-column: 2/3;
+        order: 2;
+    }
+
+    #design-your-own {
+        grid-column: 1 / span 2;
+        order: 3;
+        margin: 2.75rem 0 0 0;
+
+    }
+
+    .color-picker-minimun, .material-picker-minimun {
+        text-align: start;
+    }
+
+    .color-picker-container, .material-picker-container {
+        justify-content: flex-start;
+    }
+
+    .material-picker-circle, .color-picker-circle {
+        margin-right: 1.56rem;
+    }
+
+    .material-picker-circle-p, .color-picker-circle-p{
+        display: block;
+        color: #000;
+        font-family: "IBM Plex Sans Condensed";
+        font-size: var(--Paragraph-Mobil, 0.8125rem);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.25rem;
     }
 }
 
@@ -304,6 +366,9 @@ nav, p {
 
 .new-products-material-functions-wrapper {
     background: url(Assets/Desktop-Mobile-material-functions-background.jpg);
+    /* height: 100%; */
+    background-size: cover;
+    border-bottom: 1px solid white;
 
 }
 
@@ -313,8 +378,13 @@ nav, p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 1px solid white;
     background: white;
+}
+
+.new-products-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #new-products-section h1 {
@@ -326,10 +396,33 @@ text-align: center;
     margin-bottom: 1.75rem;
 }
 
+@media screen and (min-width: 768px) {
+    #new-products-section {
+    background: none;
+    border: none;
+    }
+    
+    #new-products-section h1 {
+    color: white;
+    text-align: start;
+    margin-left: 5rem;
+    }
+    
+    .new-products-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+    .new-products-section-img {
+        margin-right: 1rem;
+    }
+
+}
+
 /* material-functions-section */
 
-#material-functions-section {
-    border-bottom: 1px solid white;
+.material-functions-container {
+    display: none;
 }
 
 #material-functions-card {
@@ -350,6 +443,33 @@ text-align: center;
     margin-bottom: 1.25rem;
 }
 
+@media screen and (min-width: 768px) {
+    #material-functions-section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 6rem 1rem;
+    }
+
+    #material-functions-card h1 {
+        line-height: 100%;
+    }
+
+    .material-functions-container {
+        display: block;
+        background: url(Assets/Senaste\ inom\ \ klädteknologin.jpg);
+        background-size: cover;
+        background-position: center;
+        border-bottom: none;
+    }
+
+    #material-functions-card {
+        background-color: #FFF;
+        margin: 0;
+        height: fit-content;
+        padding: 0rem 0.5rem;
+
+    }
+}
 /* Fix-it-section */
 
 #fix-it-section{
@@ -404,6 +524,15 @@ text-align: center;
     .fix-it-card-img {
         max-width: 100%;
         height: auto;
+    }
+
+    @media screen and (min-width: 768px) {
+        .fix-it-card-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0.25rem;
+            margin: 0;
+        }
     }
 
 /* newsletter-section */
