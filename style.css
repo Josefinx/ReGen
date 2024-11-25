@@ -464,10 +464,12 @@ text-align: center;
     margin-bottom: 1rem;
     height: fit-content;
     padding: 0rem 0.5rem;
+    border-top: 1px solid white;
 }
 
 #material-functions-card h1 {
     line-height: 1.75rem; /* 100% */
+    margin-top: 3rem;
 }
 
 .material-functions-card-square {
@@ -475,6 +477,10 @@ text-align: center;
     grid-template-columns: 1fr 1.5fr;
     margin-bottom: 1.25rem;
     gap: 0.5rem;
+}
+
+.material-functions-card-square :last-of-type {
+    margin-bottom: 3rem;
 }
 
 .material-functions-card-square-img {
@@ -521,6 +527,59 @@ text-align: center;
 
     }
 }
+
+/* Adventure-section */
+
+.adventure-h1 {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.adventure-card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    margin: 5rem 1rem;
+
+}
+
+.adventure-card {
+    max-width: 1fr;
+    position: relative;
+}
+
+.adventure-card-img {
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.adventure-card-text {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+@media screen and (min-width: 769px) {
+    
+   .adventure-card-wrapper {
+    display: flex;
+    margin: 5rem 1rem;
+   }
+
+   .adventure-card {
+    margin: 1.1875rem;
+    height: 42rem;
+    width: 25rem;
+    object-fit: cover;
+    object-position: center;
+
+   }
+
+   .adventure-card-img {
+   height: 100%;
+}
+}
+
 /* Fix-it-section */
 
 #fix-it-section{
