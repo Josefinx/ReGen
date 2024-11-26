@@ -285,7 +285,7 @@ button {
 
     .hero-h2-mobile {
         position: absolute;
-        top: 14.5rem;
+        top: 16.5rem;
         left: 1.563rem;
         font-size: 1rem;
         line-height: 1.3rem;
@@ -344,6 +344,7 @@ button {
         color: #FFF;
         font-weight: 800;
         margin: 25rem 0 0 0;
+        text-shadow: 3px 3px 4px #00000040;
     } 
 
     .hero-h2-desktop {
@@ -351,6 +352,7 @@ button {
         font-weight: 400;
         color: #fff;
         margin: 2rem 0 2rem 0;
+        text-shadow: 3px 3px 4px #00000040;
     }
 
     .hero-button {
