@@ -619,7 +619,11 @@ text-align: center;
 }
 
     .new-products-section-img {
-        margin-right: 1rem;
+    margin-right: 1rem;
+    }
+
+    .new-products-section-img:hover {
+    transform: scale(1.05);
     }
 
 }
