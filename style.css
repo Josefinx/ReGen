@@ -804,10 +804,11 @@ text-align: center;
 
 }
 
-/* Footer */
+/* Footer mobile */
 
+@media (max-width: 767px) {
 footer {
-    background-color: #D9D9D9;
+    background-color: #8C8C8C;
     padding-top: 3.14rem;
 }
 
@@ -862,20 +863,130 @@ footer {
 }
 
 .footer-copy {
-    margin: 1rem 0 0 0;
+    margin: 1.7rem 0 0 0;
     font-weight: 200;
     max-width: 16rem;
 }
 
 .footer-logo {
     width: 170px;
-    margin: 8rem 0 1.2rem 0;
+    margin: 5.5rem 0 1.2rem 0;
     position: relative;
     justify-self: end;
     opacity: 0.5;
 }
 
+.footer-contact, .footer-customer-service, .footer-engage {
+    margin-top: 1.4rem;
+}
+}
+
+/* Footer desktop */
+
+@media (min-width: 767px) {
+footer {
+    background-color: #8C8C8C;
+    padding-top: 4.5rem;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2);
+    gap: 6rem;
+    padding-left: 3.6875rem;
+    padding-right: 3.6875rem;
+    position: relative;
+    margin: 0;
+}
+
+.footer-categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr 1fr;
+    gap: 2.1rem;
+    position: relative;
+    margin: 0;
+    grid-column: 1 / span 2;
+}
+
+.footer-number {
+    grid-column: 1;
+}
+
+.footer-h1 {
+    margin: 0 0 1.2rem 0;
+    font-size: 2.375rem;
+}
+
+.footer-ul {
+    list-style-type: disc;
+    margin: 0;
+    padding: 0 0 0 1.5rem;
+    font-size: 1.5rem;
+}
+
+.footer-ul ::marker {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.footer-p {
+    word-wrap: break-word;
+    font-size: 1.5rem;
+    max-width: 15rem;
+}
+
+.footer-p-2 {
+    word-wrap: break-word;
+    max-width: 20rem;
+    margin: 0 0 0.63rem 0;
+    font-size: 1.5rem;
+}
+
+.footer-read-more-button {
+    margin: 0 0 0 0.5rem;
+}
+
+.footer-engage {
+    max-width: 13rem;
+    margin-left: 1.8rem;
+}
+
+.footer-contact {
+    max-width: 16rem;
+}
 
 
+.footer-phone-number {
+    text-decoration: none;
+    color: #000;
+    margin: 0 0 0 0;
+    font-size: 1.75rem;
+}
 
+.footer-links {
+    text-decoration: none;
+    color: #000;
+}
 
+.footer-copy {
+    margin: 6.6rem 0 0 0;
+    font-weight: 200;
+    grid-column: 1;
+    grid-row: 2;
+    position: relative;
+}
+
+.footer-logo {
+    max-width: 590px;
+    margin: 0 2rem 3.2rem 0;
+    position: relative;
+    justify-self: end;
+    opacity: 0.5;
+    grid-column: 2;
+}
+
+.footer-read-more-button {
+    display: none; 
+  }
+}
