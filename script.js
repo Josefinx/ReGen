@@ -1,4 +1,5 @@
 const watchImg = document.getElementById("watch-img");
+const ButtonKoppar = document.getElementById("button-koppar");
 const ButtonSilver = document.getElementById("button-silver");
 const ButtonRubber = document.getElementById("button-rubber");
 const ButtonDesign = document.getElementById("design-your-own");
@@ -13,4 +14,8 @@ ButtonRubber.addEventListener("click", function() {
 
 ButtonDesign.addEventListener("click", function() {
     watchImg.src = "Assets/watch/Final4!.gif";
+  });
+
+ButtonKoppar.addEventListener("click", function() {
+    watchImg.src = "Assets/watch/Final1!.png";
   });
