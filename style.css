@@ -642,7 +642,9 @@ text-align: center;
 
 .material-functions-card-square-text h2 {
     margin-top: 0;
-    text-overflow: ellipsis;
+    hyphens: auto; /* Add hyphens when breaking words */
+    overflow-wrap: break-word; /* Ensure wrapping happens */
+    word-break: break-word; /* Compatibility */
 
 }
 
@@ -659,7 +661,7 @@ text-align: center;
 
     .material-functions-container {
         display: block;
-        background: url(Assets/Senaste\ inom\ \ klädteknologin.jpg);
+        background: url(Assets/desktop/Senaste_inom_kladteknologin.jpg);
         background-size: cover;
         background-position: center;
         border-bottom: none;
@@ -673,6 +675,15 @@ text-align: center;
 
     }
 }
+
+/* desktop-mountain-wrapper */
+
+.desktop-mountain-wrapper{
+    background: url(Assets/desktop/bg-engagera.jpg) no-repeat center center;
+    background-size: cover;
+
+}
+
 
 /* Adventure-section */
 
@@ -703,6 +714,13 @@ text-align: center;
     position: absolute;
     top: 1rem;
     left: 1rem;
+    margin: 0;
+    height: fit-content;
+}
+
+.adventure-card-text h2 {
+    margin-top: 0;
+
 }
 
 @media screen and (min-width: 769px) {
@@ -713,7 +731,6 @@ text-align: center;
    }
 
    .adventure-card {
-    margin: 1.1875rem;
     height: 42rem;
     width: 25rem;
     object-fit: cover;
@@ -739,21 +756,77 @@ text-align: center;
     margin-left: 1.5rem;
 }
 
-.project-article {
+.article-standard, .article-reversed {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-   
+    align-items: center;
+    background: white;
 
+}
+
+.article-standard {
+    grid-template-areas: "text image";
+}
+
+.article-reversed {
+    grid-template-areas: "image text";
+    
+}
+
+
+.project-article-text {
+    grid-area: text;
+    padding: 1rem;
 }
 
 .project-article-img {
     object-fit: cover;
     object-position: center;
     max-width: 100%;
+    grid-area: image;
+
 }
 
+@media screen and (min-width: 769px) {
+#ongoing-projects-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 6.44rem;
+}
 
+.projects-h1 {
+    grid-column: 1 / span 2;
+    margin-left: 0;
+
+}
+
+.project-article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.project-article-text {
+    grid-column: 1/2;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-article-text h2 {
+    hyphens: manual; /* Add hyphens when breaking words */
+    overflow-wrap: break-word; /* Ensure wrapping happens */
+    word-break: break-word; /* Compatibility */
+
+}
+
+.project-article-img {
+    object-fit: cover;
+    object-position: center;
+    grid-column: 2/3;
+    height: 100%;
+
+}
+}
 /* Fix-it-section */
 
 #fix-it-section{
