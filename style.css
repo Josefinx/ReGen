@@ -296,7 +296,7 @@ button {
 
     .hero-button {
         position: absolute;
-        top: 19rem;
+        top: 22rem;
         left: 1.563rem;
         border: 1px solid;
         color: #000;
@@ -320,6 +320,10 @@ button {
 /* hero desktop */
 
 @media (min-width: 767px) {
+    #hero-section {
+    position: relative;
+    }
+
     .hero-background-desktop {
         width: 100%;
         height: 775px;
