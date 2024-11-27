@@ -545,6 +545,7 @@ button {
 
     #regen-watch-header, .view-section-header-pro {
        margin-top: 7rem;
+       margin-bottom: 2rem;
     }
 
     .view-section-header,  .view-section-header-text, #color-material-picker-container {
